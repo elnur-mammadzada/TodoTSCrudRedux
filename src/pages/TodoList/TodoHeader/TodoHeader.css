@@ -1,0 +1,53 @@
+/* TodoHeader Container */
+.todo-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px; /* Aradakı boşluq */
+  padding: 20px;
+  background-color: #f7f9fc; /* Açıq fon */
+  border-radius: 8px; /* Yumşaq künclər */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Yüngül kölgə */
+  margin: 20px 0; /* Üst və alt boşluq */
+}
+
+/* MUITextField Style */
+.todo-header .MuiTextField-root {
+  flex: 1; /* Tam genişlik */
+  background-color: #fff; /* Ağ fon */
+  border-radius: 4px; /* Yumşaq künclər */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Daxili kölgə */
+}
+
+/* MUIButton Style */
+.todo-header .MuiButton-root {
+  min-width: 120px; /* Düymənin minimum genişliyi */
+  height: 48px; /* Yüksəkliyi */
+  font-size: 16px; /* Mətn ölçüsü */
+  font-weight: bold; /* Qalın mətn */
+  text-transform: uppercase; /* Böyük hərflərlə yazı */
+  border-radius: 6px; /* Yumşaq künclər */
+  background-color: #ffd700; /* Sarı fon */
+  color: #000; /* Qara mətn */
+  transition: all 0.3s ease; /* Keçid animasiyası */
+}
+
+/* Hover Effekt */
+.todo-header .MuiButton-root:hover {
+  background-color: #ffc107; /* Daha tünd sarı hover effekti */
+  color: #000; /* Qara mətn (dəyişməz) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Daha dərindən kölgə */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todo-header {
+    flex-direction: column; /* Mobil görünüşdə dik düzülmə */
+    gap: 15px;
+  }
+
+  .todo-header .MuiButton-root {
+    width: 100%; /* Mobil görünüşdə tam genişlik */
+  }
+}

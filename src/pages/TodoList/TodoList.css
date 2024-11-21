@@ -1,0 +1,37 @@
+/* TodoList Ana Konteyner */
+.todo-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+}
+
+/* TodoHeader ve TodoBottom Arası Boşluk */
+.todo-list > * {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Son Element İçin Alt Sınır Kaldır */
+.todo-list > *:last-child {
+  border-bottom: none;
+}
+
+/* Arka Plan ve Gölge */
+.todo-list:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .todo-list {
+    margin: 20px;
+    width: auto;
+  }
+}
